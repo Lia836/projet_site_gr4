@@ -1,0 +1,331 @@
+/*menu racine qui définit pour la page les couleurs et la police
+permet d'avoir un endroit pour changer sans devoir changer tous les classes*/
+:root {
+  --C1: #fff;
+  --C2: #4a536b;
+  --C3: #aed6dc;
+  --C4: #b9a5a51a;
+  --C5: #ff9a8d;
+  /*choix des cinq couleurs qui seront utilisées pour ce site*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*choix de la police*/
+}
+
+/*caractéristique du corps du document*/
+body {
+  line-height: 1.6; /*valeur de hauteur de ligne recommandée, c'est une valeu qui signifie que la hauteur de la ligne sera relative à la taille de police*/
+  color: var(--C2); /*couleur de la police, variable déterminée dans le root*/
+  background-color: var(--C1); /*couleur de fond déterminée aussi dans le root*/
+}
+
+/*détermine le pied de page*/
+footer {
+  text-align: center; /*texte aligné au centre*/
+  padding: 1rem; /*marge à l'intérieur de l'élément bas/haut et droite/gauche*/
+  background-color: var(--C5); /*couleur de fond*/
+  color: var(--C2); /*couleur du texte*/
+  margin-top: 2rem; /*marge à l'extérieur de l'élément au dessus*/
+  bottom: 0; /*élément collé au bas*/
+  z-index: 1000; /*permet d'afficher l'élèment au dessus des autres*/
+  position: sticky; /* l'élèment ne bouge pas*/
+  box-shadow: 0 2px 5px 3px var(--C4) inset; /*ombre légère pour avoir un effet de relief*/
+}
+
+/*détermine le texte dans le pied de page*/
+footer p {
+  margin: -0.5rem; /*réduction de la marge*/
+}
+
+/*caractériques des titres h1 et h2*/
+h1,
+h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /*choix d'une police différente*/
+}
+
+/*style des listes ordonnées ou non ordonnées*/
+li {
+  list-style-type: none; /*les puces ne sont pas affichées*/
+}
+
+/*style du texte dans les listes*/
+li p {
+  text-align: center; /*le texte est aligné à gauche*/
+  padding: 0.8rem; /*marge intérieure de l'élément*/
+}
+
+/*mets en gras la police des titres h3 de la page contact pour la liste des questions*/
+.faq h3 {
+  font-weight: bold; /*mets la police en gras*/
+  display: inline; /*aligne les puces avec le texte*/
+  margin-bottom: 2rem; /*rajoute une marge sous le titre*/
+}
+
+/*concerne la partie header de l'html */
+header {
+  background-color: var(--C1); /*couleur de fond déterminée dans le root*/
+  padding: 1rem 2rem; /*espacement intérieur vertical et horizontal entre le contenu et les bordures (même si elles ne sont pas visibles) rem est l'unité relative à la taille de la police de base*/
+  box-shadow: 0 2px 5px 3px var(--C4) inset; /*ombre légère pour avoir un effet de relief*/
+  position: sticky; /*permet de fixer l'en tête en haut du défilement*/
+  top: 0; /*l'élément est aligné avec le bord supérieur de la fenêtre, définit sa position verticale*/
+  z-index: 1000; /*permet d'afficher l'élèment au dessus des autres*/
+}
+
+nav {
+  display: flex; /*Aligne les liens sur une même ligne*/
+  justify-content: space-between; /*manière dont le navigateur répartit l'espace entre et autour des éléments de contenu le gon de l'axe principal d'un conteneur flexible*/
+  align-items: center; /*alignement par défaut des éléments à l'intérieur d'une boîte flexible*/
+}
+
+/*choix du nom de classe pour bien préciser que cela ne s'applique qu'aux liens de navigations*/
+.nav-links {
+  list-style: none; /*supprime les puces de listes*/
+  display: flex; /*permet d'aligner les liens sur une même ligne, flex plus pratique en terme de contrôle et flexibilité*/
+  gap: 1.5rem; /*flex permet l'utilisation du gap plus intuitif qu'avec les marges*/
+}
+
+/*s'applique aux liens a directement*/
+.nav-links a {
+  text-decoration: none; /*enlève le soulignement des liens*/
+  color: var(--C2); /*détermine la couleur déterminée dans le root*/
+  font-weight: bold; /*texte en gras*/
+  transition: color 0.5s ease; /*Animation de changement de couleur pour ajouter de la douceur dans la transition entre le lien et le hover*/
+}
+
+/* s'applique quand la souris arrive sur un lien a de navigation*/
+.nav-links a:hover {
+  color: var(--C5); /*détermine la couleur quand on est sur le lien*/
+}
+
+/*caractéritique du logo*/
+.logo {
+  width: 30%; /*largeur*/
+  height: 30%; /*hauteur*/
+}
+
+/*caractéristique des images dans les cadres gris ou blanc*/
+.img {
+  width: 10%;
+  height: 10%;
+  margin-bottom: -3rem;
+}
+
+/*classe crée qui concerne les parties dans un cadre bleu */
+.bleu {
+  text-align: center; /*le texte se retrouve au centre*/
+  padding: 4rem 2rem; /*l'espace entre le contenu et la bordure d'un élément déterminer par l'unité em qui est lié à la taille de la police*/
+  background-color: var(--C3); /*couleur du fond*/
+  color: var(--C1); /* couleur de la police*/
+}
+
+/*classe qui concerne les titres h1 de la partie bleu*/
+.bleu h1 {
+  font-size: 2.5rem; /*taille de la police*/
+  margin-bottom: 1rem; /*taille de la marge en dessous du titre*/
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*classe qui concerne les titres h1 de la partie bleu*/
+.bleu p {
+  font-size: 1.2rem; /*taille de la police*/
+  margin-bottom: 2rem; /*taille de la marge sous le texte*/
+}
+
+/*classe crée pour les boutons de la page*/
+.boutton {
+  padding: 1rem 1.5rem; /*taille de l'espace à l'intérieur de l'élément entre le texte et le cadre*/
+  background-color: var(--C1); /*couleur de fond*/
+  color: var(--C3); /*couleur de la police*/
+  text-decoration: none; /*enlève le soulignement des liens*/
+  font-weight: bold; /*texte en gras*/
+  border-radius: 5px; /*taille de l'arrondi du cadre*/
+  transition: background-color 0.8s ease, color 0.8s ease; /*permet une transition et changement de couleur quand la souris arrive sur le lien, animation de changement ralenti*/
+}
+
+/*caractéristique du boutton quand la souris arrive dessus*/
+.boutton:hover {
+  background-color: var(--C5); /*couleur de fond*/
+  color: var(--C1); /*couleur de la police*/
+}
+
+/*deuxième design de bouton*/
+.boutton2 {
+  padding: 1rem 1.5rem; /*taille de l'espace à l'intérieur de l'élément entre le texte et le cadre*/
+  background-color: var(--C3); /*couleur de fond*/
+  color: var(--C1); /*couleur de la police*/
+  text-decoration: none; /*enlève le soulignement des liens*/
+  font-weight: bold; /*texte en gras*/
+  border-radius: 5px; /*taille de l'arrondi du cadre*/
+  transition: background-color 0.8s ease, color 0.8s ease; /*permet une transition et changement de couleur quand la souris arrive sur le lien, animation de changement ralenti*/
+  margin-top: 1rem; /*taille de la marge au dessus de l'élément*/
+}
+
+/*caractéristique du boutton2 quand la souris arrive dessus*/
+.boutton2:hover {
+  background-color: var(--C5); /*couleur de fond*/
+  color: var(--C1); /*couleur de la police*/
+}
+
+/*classe déterminant le cadre gris*/
+.grbl {
+  padding: 4rem 12rem; /*marge à l'intérieur de l'élément*/
+  text-align: center; /*centre le texte*/
+  background-color: var(--C1); /*couleur de fond*/
+  margin: 2rem 0; /*marge haut/bas et marge droite/gauche*/
+  border-radius: 10px; /*arrondi de l'élément*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*effet d'ombre à l'extérieur du cadre*/
+  display: flex; /* Utilise Flexbox */
+  flex-direction: column; /* Les éléments sont organisés verticalement */
+  align-items: center; /* Centrer les éléments horizontalement */
+  justify-content: center; /*centre verticalement*/
+}
+
+/*S'applique aux éléments pairs parmi les enfants d'un parent le 1er aura un fond gris et le suivant un fond blanc comme déterminé au dessus*/
+.grbl:nth-child(even) {
+  background-color: var(--C4); /*couleur du fond*/
+}
+
+/*s'applique au p de la classe grbl*/
+.grbl p {
+  margin-top: -0.3rem; /*réduction de la marge basse à l'extérieur de l'élément*/
+}
+
+/*s'applique à la classe profil pour le profil des gens de l'équipe. celui ci est le conteneur flexible qui permet d'agencer et regrouper les blocs*/
+.profil-bloc {
+  /*crée des éléments facilement l'agencement des blocs*/
+  justify-content: center; /*centre les éléments*/
+  gap: 2rem; /*espace entre les blocs*/
+  margin-top: 2rem; /*marge au dessus de l'élément*/
+  align-items: stretch; /* Centrer les éléments horizontalement */
+  display: flex; /*détermine leconteneur flexible*/
+}
+
+/*définit le style pour chacun des blocs.*/
+.bloc {
+  text-align: center;
+  background-color: var(--C3); /*couleur de fond du bloc*/
+  border-radius: 10px; /*arrondi du cadre*/
+  padding: 1rem; /*espace entre le texte et les bords de l'éléments*/
+  box-shadow: 0 2px 5px var(--C2); /*ombre au cadre*/
+  width: 300px; /*largeur maximale d'un élément*/
+  min-height: 200px; /*hauteur minimum de l'élèment, s'adapte à la taille*/
+}
+
+.bloc h3 {
+  padding-bottom: 2rem;
+}
+
+/*S'applique aux éléments pairs parmi les enfants d'un parent le 1er aura un fond bleu et le suivant un fond corail*/
+.bloc:nth-child(even) {
+  background-color: var(--C5); /*détermine la couleur de fond*/
+}
+
+/*détermine le style des titres h3 dans un élément de classe bloc*/
+.bloc h3 {
+  margin-bottom: 0.5rem; /*définit la marge en bas*/
+  font-size: 2rem; /*taille de la police*/
+}
+
+/*détermine le style des titres h4 dans un élément de classe bloc*/
+.bloc h4 {
+  margin-top: -0.5rem; /*marge au dessus de l'élèment*/
+  margin-bottom: 2rem; /* marge en dessous de l'élèment*/
+}
+
+/*caractéristiques du calendrier*/
+/*bouton précédent*/
+#prec {
+  background-color: var(--C4); /*couleur de fond avec la variable*/
+  color: var(--C2); /*couleur de la police*/
+  width: 11rem; /*largeur exprimée en rem donc par rapport à la taille de la police*/
+  height: 2.5rem; /*hauteur en rem*/
+  border-radius: 10px; /*arrondi des angles*/
+  font-weight: bold; /*police en gras*/
+}
+
+/*bouton suivant*/
+#suiv {
+  background-color: var(--C4); /*couleur de fond*/
+  color: var(--C2); /*couleur de la police*/
+  width: 11rem; /*largeur exprimée en rem donc par rapport à la taille de la police*/
+  height: 2.5rem; /*hauteur en rem*/
+  border-radius: 10px; /*arrondi des angles*/
+  font-weight: bold; /*police en gras*/
+}
+
+/*caractéritque du tableau*/
+table {
+  border-collapse: collapse; /*les bordures sont réduites à une seule bordure au lieu d'être séparées*/
+  width: 100%; /*largeur du tableau*/
+  margin: 20px 0; /*marges*/
+}
+
+/*propriétés des cellules du tableau*/
+th,
+td {
+  border: 2px solid var(--C4); /*couleur des bordures*/
+  padding: 10px; /*espacement à l'intérieur des cellules qui détermine la taille de chaque cellules*/
+  text-align: center; /*aligne le texte au milieu*/
+}
+
+/*caractéristiques des lignes en tête du tableau*/
+th {
+  background-color: var(--C4); /*couleur de fond*/
+  font-weight: bold; /*police en gras*/
+}
+
+/*classe pour déterminer le style du jour d'aujourd'hui*/
+.cal_aujourdhui {
+  color: var(--C2); /*couleur de la police*/
+  font-weight: bold; /*police en gras*/
+  background-color: var(--C5); /*fond de couleur de la case d'aujourd'hui*/
+}
+
+/*style de l'horloge*/
+#clock {
+  color: var(--C1); /*couleur de police de l'horloge*/
+  width: 6rem; /*largeur de l'horloge*/
+  font-size: 1.5rem; /*taille de la police*/
+  background-color: var(--C3); /*couleur de fond de l'horloge*/
+  border-color: var(--C1); /*couleur de la bordure*/
+  border-radius: 10px; /*arrondi du cadre*/
+  text-align: center; /*aligne le texte au milieu*/
+  border-style: solid; /*enlève l'effet d'ombre pour une bordure uniforme*/
+}
+
+/*style de la video*/
+#video {
+  border-radius: 20px; /*arrondi des bordures de la video*/
+}
+
+/*caractéristiques de la photo sur la page équipe*/
+.photo {
+  width: 100%; /*largeur à 100%*/
+  box-shadow: 0px 4px 6px var(--C2); /*ombre de la photo*/
+  margin-bottom: 2rem; /*rajoute une marge en dessous de la photo*/
+}
+
+.form {
+  display: flex; /*utilisation de flex box pour la disposition*/
+  flex-direction: column; /* Organise les éléments verticalement en colonne*/
+  gap: 1rem; /* Ajoute un espacement entre les éléments */
+  width: 500px; /*largeur de l'élément*/
+  background-color: var(--C4); /* Couleur de fond du formulaire*/
+  padding: 20px; /*espace intérieur des bords de bloc et les éléments*/
+  border-radius: 10px; /*arrondi de la bordure*/
+  box-shadow: 0px 4px 6px var(--C2); /*ombre du formulaire*/
+}
+
+/*définit le style des cases dans le formulaire avec deux différentes case 1 et case 2*/
+.case {
+  width: 60%; /*largeur de la case*/
+  margin: auto; /*centre la case*/
+  height: 30px; /*hauteur de la case*/
+  font-size: 1rem; /*taille de l'écriture à l'intérieur des cases*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*police de l'intérieur des cases*/
+}
+
+.case2 {
+  /*définit la case de texte*/
+  font-size: 1rem; /*taille de la police*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*police de l'écriture*/
+}

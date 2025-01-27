@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Déclaration du type de document et de la langue utilisée -->
+  <!--en tête de la page qui ne sera pas visible-->
+  <head>
+    <!--respecte la consigne demandée-->
+    <!-- Spécifie l'encodage des caractères pour éviter les problèmes d'affichage -->
+    <meta charset="UTF-8" />
+    <!--Permet une adaptabilité par rapport aux différentes tailles d'écran-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Assure une adaptabilité optimale pour les appareils mobiles -->
+    <title>
+      Bracelet temporel Terra Loop : téléportation et voyages instantannés
+    </title>
+    <!--titre de la page, il sera affiché dans l'onglet du navigateur-->
+    <!--titre choisi pour un référencement avec plusieurs mots clés :  bracelet temporel, téléportation, voyages instantanés, Terra Loop)-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--relie la page à la feuille CSS-->
+  </head>
+
+  <!--partie visible du site-->
+  <body>
+    <!--en tête du site-->
+    <header>
+      <!--Partie destinée à la navigation du site et le logo-->
+      <nav>
+        <!--division qui contient le logo avec la class permettant de spécifié le style et la description de l'image-->
+        <div>
+          <img
+            src="images/logo.png"
+            class="logo"
+            alt="logo de l'entreprise qui représente deux mains qui tiennent la Terre entourée d'un bracelet"
+          />
+        </div>
+        <!--Partie des liens de navigation avec le style associé navigation-->
+        <!--liste non ordonnée-->
+        <ul class="nav-links">
+          <!--chaque élément de la liste avec le lien vers la page html correspondante-->
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="bracelet.html">Le bracelet voyageur</a></li>
+          <li><a href="equipe.html">L'équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--fin de la partie navigation-->
+    </header>
+    <!--fin de l'en-tête-->
+
+    <main>
+      <!--corps de la page, partie principal-->
+      <section class="bleu">
+        <!--section présentant le fonctionnement du produit-->
+        <h1>Comment ça marche ?</h1>
+        <p>Terra Loop : le voyage par la pensée, mode d’emploi 📃 !</p>
+      </section>
+      <section class="grbl">
+        <h2>Regardez, c'est simple comme dire bonjour !</h2>
+        <!--titre de la section-->
+        <!--section qui présente m'insertion d'une vidéo avec la classe grbl-->
+        <video
+          id="video"
+          src="videos/videoTerra.mp4"
+          autoplay
+          muted
+          loop
+          width="640"
+          height="360"
+        >
+          <!--lien Url de la vidéo/démarrage automatique de la vidéo, pas de son, se joue en boucle, largeur et hauteur de la vidéo-->
+        </video>
+      </section>
+      <section class="grbl">
+        <!--section qui détaille l'utilisation du produit-->
+        <!--la section est composée de texte et titres h4-->
+        <p>
+          Imagine un bracelet élégant, conçu avec soin, qui transforme tes rêves
+          d’évasion en réalité. Pas besoin de passeport, de longues files
+          d’attente à l’aéroport, ou de stress pour la douane
+        </p>
+        <p>🌏 Terra Loop t’ouvre les portes du monde… !</p>
+        <h4>Comment ça marche ? 🤷‍♀️</h4>
+        <p>
+          Terra Loop repose sur une technologie révolutionnaire qui capte et
+          amplifie les ondes cérébrales associées au désir de voyage.
+          Concrètement :
+        </p>
+        <!--premiere puce-->
+        <p>
+          Pense fort à ta destination (Paris🥖, une plage isolée en Thaïlande 🏖️
+          ou même ton lit 🛌, on ne juge pas)
+        </p>
+        <!--texte-->
+
+        <p>
+          Le bracelet active son module neuro-synaptique intégré 💫 (un bijou
+          d’ingénierie signé notre génie maison, Alex Novak).
+        </p>
+        <p>Tu te téléportes à ta destination !</p>
+      </section>
+
+      <section class="grbl">
+        <!--section présentant les avantages et inconvénients avec le style grbl-->
+        <h2>Les côtés lumineux et un peu ombragés de TerraLoop</h2>
+        <h3>Avantages et petits bémols à connaître !</h3>
+        <div class="profil-bloc">
+          <!--division avec la classe profil-bloc pour l'ensemble des blocs-->
+          <div class="bloc">
+            <!--nouvelle division pour chaque bloc avec la classe bloc-->
+            <h3>Avantages 🌞</h3>
+            <!--titre du bloc-->
+            <p>
+              Écolo à 100 % : Zéro émission carbone. Ton empreinte écologique ?
+              Aussi légère qu’une plume.
+            </p>
+            <p>
+              Design stylé : Choisis ton bracelet parmi une gamme de couleurs et
+              de styles qui matchent ton look.
+            </p>
+            <p>Rapidité imbattable : Il te suffit d’y penser. Littéralement.</p>
+          </div>
+          <!--fin de la divison-->
+
+          <div class="bloc">
+            <!--nouvelle division pour les inconvénients création d'un deuxième bloc-->
+            <h3>Inconvénients ⚡</h3>
+            <p>
+              C'est vraiment physique : Ton corps est bien secoué pendant le
+              voyage !
+            </p>
+            <p>
+              Concentration obligatoire : Une pensée parasite et hop, tu finis à
+              l’endroit où tu ne voulais pas vraiment aller.
+            </p>
+            <p>
+              Une vision trop rapide de votre endroit peut erroner la
+              destination.
+            </p>
+          </div>
+          <!--fin de la divison de ce bloc-->
+        </div>
+        <!--fin de la division des deux blocs-->
+      </section>
+      <!--fin de la section grbl-->
+    </main>
+    <!--fin du contenu principal-->
+
+    <footer>
+      <!-- pied de page-->
+      <p>&copy; 2025 TerraLoop</p>
+      <p>Siret 0978363083278</p>
+      <!-- numéro de Siret volontairement factice pour le projet-->
+      <p>09 45 65 77 810</p>
+      <!--numéro de téléphone volontairement factice pour le projet-->
+      <!--texte contenu dans le pied de page-->
+    </footer>
+    <!--fin du pied de page-->
+    <script src="script.js"></script>
+    <!--exécution du script pour les interactions dynamiques-->
+  </body>
+  <!--fin du corps du site-->
+</html>
+<!--fin de la page html-->
