@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Déclaration du type de document et de la langue utilisée -->
+  <!--en tête de la page qui ne sera pas visible-->
+  <head>
+    <!--respecte la consigne demandée-->
+    <!-- Spécifie l'encodage des caractères pour éviter les problèmes d'affichage -->
+    <meta charset="UTF-8" />
+    <!--Permet une adaptabilité par rapport aux différentes tailles d'écran-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Assure une adaptabilité optimale pour les appareils mobiles -->
+    <title>La page formulaire pour nous envoyer mail</title>
+    <!--titre de la page, il sera affiché dans l'onglet du navigateur-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--relie la page à la feuille CSS-->
+  </head>
+
+  <!--partie visible du site-->
+  <body>
+    <!--en tête du site-->
+    <header>
+      <!--Partie destinée à la navigation du site et le logo-->
+      <nav>
+        <!--division qui contient le logo avec la class permettant de spécifié le style et la description de l'image-->
+        <div>
+          <img
+            src="images/logo.png"
+            class="logo"
+            alt="logo de l'entreprise qui représente deux mains qui tiennent la Terre entourée d'un bracelet"
+          />
+        </div>
+        <!--Partie des liens de navigation avec le style associé navigation-->
+        <!--liste non ordonnée-->
+        <ul class="nav-links">
+          <!--chaque élément de la liste avec le lien vers la page html correspondante-->
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="bracelet.html">Le bracelet voyageur</a></li>
+          <li><a href="equipe.html">L'équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--fin de la partie navigation-->
+    </header>
+    <!--fin de l'en-tête-->
+
+    <main>
+      <!--contenu principal de la page-->
+      <div class="bleu">
+        <!--division 1, principale, avec le style bleu-->
+        <h1>Laissez parler vos plumes ! ✒️</h1>
+        <!--titre de la division-->
+      </div>
+      <!--fin de la division 1-->
+      <div class="grbl">
+        <!--nouvelle division (2)-->
+        <h2>Formulaire de contact</h2>
+        <!--titre de la section-->
+        <form class="form">
+          <!--insertion d'un formulaire à remplir pour envoyer un mail-->
+          <label>On vous appelle comment ? :</label>
+          <!--insertion du label nom-->
+          <input type="text" class="case" required />
+          <!--définit le type de données attendues ete attache à un style-->
+
+          <label>Votre e-mail qu'on puisse répondre :</label>
+          <!--insertion du label e-mail-->
+          <input type="email" class="case" required />
+          <!--définit le type de données attendues et attache à un style-->
+
+          <label>Lâchez-vous et dites nous tout !</label>
+          <!--insertion du label nom-->
+          <textarea
+            name="message"
+            rows="6"
+            cols="50"
+            class="case2"
+            required
+          ></textarea>
+          <!--name permet de définir le nom sous lequel les données seront envoyées-->
+          <!--Rows est le nombre visible de lignes et cols la largeur visible du texte-->
+          <!--class case2 pour définir l'intérieur-->
+          <button class="boutton2">Envoyer</button>
+          <!--bouton avec la classe boutton2 pour envoyer le mail-->
+          <!--le lien n'est pas défini pour la récolte des données 
+          aucune action en cliquant sur le bouton : il faudrait passer au côté serveur pas encore étudié PHP-->
+        </form>
+        <!--fin du formulaire-->
+      </div>
+      <!--fin de la division 2-->
+
+      <div class="grbl">
+        <!--nouvelle division (3) classe grbl-->
+        <h2>Je préfère parler de vive voix</h2>
+        <!--titre de la section-->
+        <p>Notre numéro de téléphone est juste en dessous !</p>
+        <p>👇☎️👍</p>
+        <!--texte de la section-->
+      </div>
+      <!--fin de la troisième division-->
+    </main>
+    <!--fin de la partie principale-->
+    <footer>
+      <!-- pied de page-->
+      <p>&copy; 2025 TerraLoop</p>
+      <p>Siret 0978363083278</p>
+      <!-- numéro de Siret volontairement factice pour le projet-->
+      <p>09 45 65 77 810</p>
+      <!--numéro de téléphone volontairement factice pour le projet-->
+      <!--texte contenu dans le pied de page-->
+    </footer>
+    <!--fin du pied de page-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

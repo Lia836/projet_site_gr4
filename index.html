@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Déclaration du type de document et de la langue utilisée -->
+  <!--en tête de la page qui ne sera pas visible-->
+  <head>
+    <!--respecte la consigne demandée-->
+    <!-- Spécifie l'encodage des caractères pour éviter les problèmes d'affichage -->
+    <meta charset="UTF-8" />
+    <!--Permet une adaptabilité par rapport aux différentes tailles d'écran-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Assure une adaptabilité optimale pour les appareils mobiles -->
+    <title>
+      Découvrez TerraLoop : Votre Passeport Écoresponsable Pour Voyager avec
+      Style
+    </title>
+    <!--titre de la page, il sera affiché dans l'onglet du navigateur-->
+    <!--titre choisi pour un référencement avec plusieurs mots clés : TerraLoop, voyage écoresponsable, bracelet connecté, innovation écologique, style durable-->
+    <link rel="stylesheet" href="styles.css" />
+    <!--relie la page à la feuille CSS-->
+  </head>
+
+  <!--partie visible du site-->
+  <body>
+    <!--en tête du site incluant navigation et logo-->
+    <header>
+      <!--Partie destinée à la navigation du site-->
+      <nav>
+        <!--division qui contient le logo avec la class permettant de spécifié le style et la description de l'image-->
+        <div>
+          <img
+            src="images/logo.png"
+            class="logo"
+            alt="logo de l'entreprise qui représente deux mains qui tiennent la Terre entourée d'un bracelet"
+          />
+        </div>
+        <!--Partie des liens de navigation avec le style associé navigation-->
+        <!--liste non ordonnée-->
+        <ul class="nav-links">
+          <!--chaque élément de la liste avec le lien vers la page html correspondante-->
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="bracelet.html">Le bracelet voyageur</a></li>
+          <li><a href="equipe.html">L'équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--fin de la partie navigation-->
+    </header>
+    <!--fin de l'en-tête-->
+
+    <main>
+      <!--corps de la page, partie principal-->
+      <section class="bleu">
+        <!--création d'une section rattaché à la classe bleu-->
+        <h1>Bienvenue sur notre site</h1>
+        <!--titre principal, accueil du site-->
+        <p>
+          Notre bracelet vous fera voyager en quelques minutes n'importe où dans
+          le monde
+        </p>
+        <!-- texte-->
+        <a href="bracelet.html" class="boutton">En savoir plus</a>
+        <!--insertion d'un lien qui a la classe boutton pour le style-->
+        <!--mène vers la page bracelet.html-->
+      </section>
+      <!--fin de section-->
+
+      <section class="grbl">
+        <!--nouvelle section avec la classe grbl pour le style-->
+        <h2>TerraLoop</h2>
+        <!--titre de la section-->
+        <p>
+          Tout a commencé sous le soleil de Polynésie, entre une noix de coco 🥥
+          et un coucher de soleil ☀️.
+        </p>
+        <!--texte-->
+
+        <p>Trois amis : Alex 🙋‍♂️, Chloé 🙋‍♀️ et Sophie 🙋‍♀️</p>
+        <p>
+          Ils partageaient un rêve incroyable : permettre à tout le monde de
+          voyager sans frontières 🗺 ni limites. Inspirés par la beauté de la
+          nature et l’envie de préserver la planète 🌍, ils ont imaginé Terra
+          Loop.
+        </p>
+        <p>
+          Une startup née d’un mélange d’ondes cérébrales, de créativité, et de
+          cocktails au bord du lagon 🏝️. Aujourd’hui, leur bracelet te permet de
+          voyager, partout dans le monde, quand tu veux, avec style et sans
+          empreinte carbone.
+        </p>
+        <!--texte scindé en plusieurs parties-->
+        <img
+          src="images/bracelet.png"
+          alt="bracelet en or simple TerraLoop"
+          class="img"
+        />
+        <!--insertion d'une image dont le chemin de référence est le src, alt la description et class img pour le style-->
+      </section>
+      <!--fin de la deuxième section-->
+
+      <section class="grbl">
+        <!--nouvelle section-->
+        <h2>J'achète</h2>
+        <!--titre de la section-->
+        <p>Vous êtes convaincus ? Vous pouvez cliquer ici :</p>
+        <!--texte de la section-->
+        <a href="#" class="boutton2" id="alerte">Je commande</a>
+        <!--lien n'ayant pas de référence avec la classe boutton2 et l'identifiant alerte pour déclencher une commande javascript sur le texte je commande-->
+      </section>
+      <!--fin de la 3e section-->
+
+      <section class="grbl">
+        <!--4e section-->
+        <!--section contenant le calendrier-->
+        <h2>Ne vous perdez pas dans le temps</h2>
+        <!--titre de la section-->
+        <div>
+          <!-- division dans laquelle se trouvent les boutons précédent et suivant associés à des identités-->
+          <button id="prec">Précédent</button>
+          <button id="suiv">Suivant</button>
+        </div>
+        <!--fin de la division-->
+        <div id="calendrier"></div>
+        <!--division de la section comprenant le calendrier-->
+        <!--affiché grâce au java script-->
+      </section>
+      <!--fin de section-->
+    </main>
+    <!-- fin du contenu principal de la page-->
+
+    <footer>
+      <!-- pied de page-->
+      <p>&copy; 2025 TerraLoop</p>
+      <p>Siret 0978363083278</p>
+      <!-- numéro de Siret volontairement factice pour le projet-->
+      <p>09 45 65 77 810</p>
+      <!--numéro de téléphone volontairement factice pour le projet-->
+      <!--texte contenu dans le pied de page-->
+    </footer>
+    <!--fin du pied de page-->
+    <script src="script.js"></script>
+    <!--exécution du script pour les interactions dynamiques-->
+  </body>
+  <!--fin du corps du site-->
+</html>
+<!--fin de la page html-->
